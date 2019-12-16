@@ -7,7 +7,7 @@ namespace Server
     {
         public static string GetText(string key)
         {
-            string path = $"../Config/{key}.txt";
+            string path = $"../Nice-Server/Config/{key}.txt";
             try
             {
                 string configStr = File.ReadAllText(path);

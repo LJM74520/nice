@@ -17,6 +17,7 @@ namespace APP
             try
             {
                 Game.EventSystem.Add(DLLType.Model, typeof(Game).Assembly);
+                Game.EventSystem.Add(DLLType.Hotfix, DllHelper.GetHotfixAssembly());
 
                 // 命令行参数
                 Parser.Default.ParseArguments<Options>(args)
@@ -26,7 +27,7 @@ namespace APP
                 IdGenerater.AppId = Game.Options.Id;
 
                 // 启动配置
-                StartConfig allConfig = MongoHelper.FromJson<StartConfig>(File.ReadAllText(Path.Combine("../", Game.Options.Config)));
+                StartConfig allConfig = MongoHelper.FromJson<StartConfig>(File.ReadAllText(Path.Combine("", Game.Options.Config)));
 
                 StartConfig startConfig = allConfig.Get(Game.Options.Id);
                 Game.Scene = EntityFactory.CreateScene(0, "Process", SceneType.Process);

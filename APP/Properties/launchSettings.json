@@ -2,8 +2,8 @@
   "profiles": {
     "APP": {
       "commandName": "Project",
-      "commandLineArgs": "--id=1  --config=../Config/StartConfig/AllServer.txt",
-      "workingDirectory": "bin"
+      "commandLineArgs": "--id=1  --config=../Nice-Server/Config/StartConfig/AllServer.txt",
+      "workingDirectory": "..\\..\\Bin\\"
     }
   }
 }

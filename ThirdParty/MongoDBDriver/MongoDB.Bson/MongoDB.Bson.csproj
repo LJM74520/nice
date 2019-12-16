@@ -6,6 +6,7 @@
     <WarningsAsErrors />
     <CodeAnalysisRuleSet>../MongoDBLegacy.ruleset</CodeAnalysisRuleSet>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
