@@ -6,6 +6,8 @@
 using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using scg = global::System.Collections.Generic;
+using Server;
+
 namespace Hotfix {
 
   #region Messages

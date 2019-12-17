@@ -17,7 +17,7 @@ namespace Server
 	}
 
 	[Message(InnerOpcode.M2M_TrasferUnitResponse)]
-	public partial class M2M_TrasferUnitResponse: IActorResponseG2R_GetLoginKey
+	public partial class M2M_TrasferUnitResponse: IActorResponse
 	{
 		public int RpcId { get; set; }
 
